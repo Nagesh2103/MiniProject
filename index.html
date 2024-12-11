@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+            <a href="index.html" class="Home"><li>Home</li></a>
+            <li class="aa">About Us</li>
+            <li>
+                <select name="Services" id="services-dropdown" onchange="navigateToPage()">
+                    <option value="">Services</option>
+                    <option value="index2.html">Long HairCut</option>
+                    <option value="index3.html">Hair Color</option>
+                    <option value="index4.html">Beard LineUp</option>
+                </select>
+            </li>
+            <button class="book1" onclick="window.location.href='index5.html'">Book Appointment</button>
+    </div>
+    <div>
+        <!-- Our Hair Styles Enhance Your Smile -->
+    </div>
+
+    <script>
+        function navigateToPage() {
+            const dropdown = document.getElementById('services-dropdown');
+            const selectedPage = dropdown.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.box {
+    max-width: 600px;
+    margin: 50px auto;
+    /* background: #ffffff; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color:rgba(220, 161, 14, 0.885);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, select, textarea, button {
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #100f0f;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #e07c00;
+}
